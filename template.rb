@@ -48,7 +48,7 @@ def download_file(uri_string, destination)
 end
 
 puts "\n========================================================="
-puts " GREENDOG RAILS 3 TEMPLATE".yellow.bold
+puts " FLEDGER RAILS 3 TEMPLATE".yellow.bold
 puts "=========================================================\n"
 
 copy_static_file 'Gemfile'
@@ -64,8 +64,8 @@ apply "#{@partials}/_rspec.rb"
 apply "#{@partials}/_capistrano.rb"
 apply "#{@partials}/_application.rb"
 apply "#{@partials}/_friendly_id.rb"   # Must be after application.rb since it runs migrations
-# apply "#{@partials}/_devise.rb"
-# apply "#{@partials}/_forgery.rb"
+apply "#{@partials}/_devise.rb"
+apply "#{@partials}/_forgery.rb"
 apply "#{@partials}/_demo.rb"
 
 puts "\n========================================================="
